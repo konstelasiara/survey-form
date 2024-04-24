@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Survey Form</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <form action="" id="survey-form">
+      <fieldset>
+        <legend>Please fill in your personal information below</legend>
+        <label for="full-name"
+          >Name:
+          <input id="full-name" name="full-name" type="text" required />
+        </label>
+        <label for="email"
+          >Email:
+          <input id="email" name="email" type="text" required />
+        </label>
+        <label for="phone"
+          >Phone Number:
+          <input id="phone" name="phone" maxlength="15" type="tel" required />
+        </label>
+        <label for="age"
+          >Age:
+          <input
+            id="age"
+            name="age"
+            min="13"
+            max="120"
+            type="number"
+            required
+          />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>What's your preferred method of contact?</legend>
+        <label for="email-contact">
+          <input
+            type="radio"
+            name="contact-method"
+            id="email-contact"
+            class="inline"
+            value="email-contact"
+            checked
+          />
+          Email
+        </label>
+
+        <label for="phone-contact">
+          <input
+            type="radio"
+            name="contact-method"
+            id="phone-contact"
+            class="inline"
+            value="phone-contact"
+          />
+          Phone Call
+        </label>
+
+        <label for="text-contact">
+          <input
+            type="radio"
+            name="contact-method"
+            id="text-contact"
+            class="inline"
+            value="text-contact"
+          />
+          Text Message
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>How did you hear about us?</legend>
+        <label for="friend-family"
+          ><input
+            type="checkbox"
+            name="referral"
+            id="friend-family"
+            class="inline"
+            value="friend-family"
+          />
+          Friend/Family referral</label
+        >
+
+        <label for="online-ad"
+          ><input
+            type="checkbox"
+            name="referral"
+            id="online-ad"
+            class="inline"
+            value="online-ad"
+          />
+          Online advertisement</label
+        >
+
+        <label for="social-media"
+          ><input
+            type="checkbox"
+            name="referral"
+            id="social-media"
+            class="inline"
+            value="online-ad"
+          />
+          Social media</label
+        >
+
+        <label for="other-channel"
+          ><input
+            type="checkbox"
+            name="referral"
+            id="other-channel"
+            class="inline"
+            value="other-channel"
+          />
+          Other
+
+          <label for="other-channel-more"
+            >If you choose other, please let us know
+            <textarea
+              name="other-channel-more"
+              id="other-channel-more"
+              cols="30"
+              rows="1"
+              placeholder="How did you know about us?"
+            ></textarea>
+          </label>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label for="feedback-comment"
+          >Please feel free to leave any additional comments or feedback in the
+          space below:
+          <textarea
+            name="feedback-comment"
+            id="feedback-comment"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </label>
+      </fieldset>
+    </form>
+  </body>
+</html>
