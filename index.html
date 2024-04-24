@@ -16,15 +16,23 @@
         <legend>Please fill in your personal information below</legend>
         <label for="name" id="name-label"
           >Name:
-          <input id="name" name="full-name" type="text" required />
+          <input
+            id="name"
+            name="full-name"
+            type="text"
+            placeholder="Please fill in your full name"
+            required
+          />
         </label>
         <label for="email" id="email-label"
           >Email:
-          <input id="email" name="email" type="email" required />
-        </label>
-        <label for="phone" id="phone-label"
-          >Phone Number:
-          <input id="phone" name="phone" maxlength="15" type="tel" required />
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Fill in your email address"
+            required
+          />
         </label>
         <label for="number" id="number-label"
           >Age:
@@ -34,28 +42,73 @@
             min="13"
             max="120"
             type="number"
+            placeholder="Age"
             required
           />
         </label>
       </fieldset>
 
       <fieldset>
+        <legend>How did you hear about us?</legend>
+        <select name="referral" id="dropdown">
+          <option value="">Select an option</option>
+          <option value="friend-family">Friend/Family referral</option>
+          <option value="online-ad">Online advertisement</option>
+          <option value="social-media">Social media</option>
+          <option value="other-channel">Other</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>How was your experience with our service?</legend>
+        <label for="poor-rate"
+          ><input
+            type="radio"
+            name="service-rating"
+            id="poor-rate"
+            class="inline"
+            value="phone-contact"
+          />
+          Poor</label
+        >
+        <label for="neutral-rate"
+          ><input
+            type="radio"
+            name="service-rating"
+            id="neutral-rate"
+            class="inline"
+            value="phone-contact"
+          />
+          Neutral</label
+        >
+        <label for="satisfied-rate"
+          ><input
+            type="radio"
+            name="service-rating"
+            id="satisfied-rate"
+            class="inline"
+            value="phone-contact"
+          />
+          Satisfied</label
+        >
+      </fieldset>
+
+      <fieldset>
         <legend>What's your preferred method of contact?</legend>
         <label for="email-contact">
           <input
-            type="radio"
+            type="checkbox"
             name="contact-method"
             id="email-contact"
             class="inline"
             value="email-contact"
-            checked
           />
           Email
         </label>
 
         <label for="phone-contact">
           <input
-            type="radio"
+            type="checkbox"
             name="contact-method"
             id="phone-contact"
             class="inline"
@@ -66,71 +119,13 @@
 
         <label for="text-contact">
           <input
-            type="radio"
+            type="checkbox"
             name="contact-method"
             id="text-contact"
             class="inline"
             value="text-contact"
           />
           Text Message
-        </label>
-      </fieldset>
-
-      <fieldset>
-        <legend>How did you hear about us?</legend>
-        <label for="friend-family"
-          ><input
-            type="checkbox"
-            name="referral"
-            id="friend-family"
-            class="inline"
-            value="friend-family"
-          />
-          Friend/Family referral</label
-        >
-
-        <label for="online-ad"
-          ><input
-            type="checkbox"
-            name="referral"
-            id="online-ad"
-            class="inline"
-            value="online-ad"
-          />
-          Online advertisement</label
-        >
-
-        <label for="social-media"
-          ><input
-            type="checkbox"
-            name="referral"
-            id="social-media"
-            class="inline"
-            value="online-ad"
-          />
-          Social media</label
-        >
-
-        <label for="other-channel"
-          ><input
-            type="checkbox"
-            name="referral"
-            id="other-channel"
-            class="inline"
-            value="other-channel"
-          />
-          Other
-
-          <label for="other-channel-more"
-            >If you choose other, please let us know
-            <textarea
-              name="other-channel-more"
-              id="other-channel-more"
-              cols="30"
-              rows="1"
-              placeholder="How did you know about us?"
-            ></textarea>
-          </label>
         </label>
       </fieldset>
 
