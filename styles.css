@@ -60,3 +60,15 @@ textarea {
   margin: 0 0.5em 0 0;
   vertical-align: middle;
 }
+
+#submit {
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+}
+
+#submit:hover {
+  cursor: pointer;
+  background-color: #0a0a23;
+  color: #fff;
+}
